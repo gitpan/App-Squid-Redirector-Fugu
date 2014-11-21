@@ -23,4 +23,4 @@ requires:
   Net::LDAP: '0'
   strict: '0'
   warnings: '0'
-version: 0.0.8
+version: 0.0.9

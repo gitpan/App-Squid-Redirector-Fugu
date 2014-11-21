@@ -193,16 +193,15 @@ while(my $squid_data = <>) {
 }
 
 
-=head2 fugu_check_time
-
-	Check if can access URL at this time
-
-	Params:
-	$time: time object
-
-	return true if can access at this time
-
-=cut
+#fugu_check_time
+#
+#	Check if can access URL at this time
+#
+#	Params:
+#	$time: time object
+#
+#	return true if can access at this time
+#
 
 sub fugu_check_time {
 	my($time) = @_;
@@ -252,9 +251,7 @@ sub fugu_check_time {
 }
 
 
-=head2 fugu_find_in_dst
-
-=cut
+# fugu_find_in_dst
 
 sub fugu_find_in_dst {
     my($config, $name, $url) = @_;
@@ -324,9 +321,7 @@ sub fugu_find_in_dst {
 }
 
 
-=head2 fugu_get_redirect_url
-
-=cut
+# fugu_get_redirect_url
 
 sub fugu_get_redirect_url {
     my($rule, $https) = @_;
@@ -340,9 +335,7 @@ sub fugu_get_redirect_url {
 }
 
 
-=head2 fugu_load_data
-
-=cut
+# fugu_load_data
 
 sub fugu_load_data {
     my($config) = @_;
@@ -494,13 +487,12 @@ sub fugu_load_data {
 }
 
 
-=head2 fugu_open_bdb_conns
-
-    Open connections with berkeley db files, and keep file handles on global config hash
-	@params	$config global config hash
-	@params $config->{logger} Log::Handler instance
-
-=cut
+# fugu_open_bdb_conns
+#
+#    Open connections with berkeley db files, and keep file handles on global config hash
+#	@params	$config global config hash
+#	@params $config->{logger} Log::Handler instance
+#
 
 sub fugu_open_bdb_conns {
     my($config) = @_;

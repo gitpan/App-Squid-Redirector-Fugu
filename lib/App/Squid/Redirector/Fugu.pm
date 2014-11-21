@@ -3,11 +3,19 @@ use warnings;
 
 package App::Squid::Redirector::Fugu;
 
-our $VERSION = '0.0.8';
+our $VERSION = '0.0.9';
 
 =head1 NAME
  
 App::Squid::Redirector::Fugu - A Squid HTTP redirector.
+
+=head1 DESCRIPTION
+
+Fugu is a Squid HTTP redirector based on Squidguard.
+
+=head1 USAGE
+
+=head2 A full config file example 
 
     {
         "bdbdir": "/var/lib/fugu",
@@ -136,7 +144,6 @@ App::Squid::Redirector::Fugu - A Squid HTTP redirector.
 =head2 Building domains and URLs DBs
 
     fugu-build --config /etc/fugu.conf
-
 
 =head2 Configuring squid.conf
 
